@@ -1,0 +1,10 @@
+{
+  "extends": "ts-config-single-spa",
+  "files": ["src/lingualeo-clone-client-root-config.ts"],
+  "compilerOptions": {
+    "declarationDir": "dist",
+    "strictNullChecks": true,
+  },
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.test*"]
+}
