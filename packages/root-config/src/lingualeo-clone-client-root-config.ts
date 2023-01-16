@@ -16,6 +16,13 @@ const applications = constructApplications({
 });
 const layoutEngine = constructLayoutEngine({ routes, applications });
 
+const someThing = async (promise: Promise<any>) => {
+  return promise;
+
+  const a = 1;
+  const f = 1;
+};
+
 applications.forEach(registerApplication);
 layoutEngine.activate();
 start();

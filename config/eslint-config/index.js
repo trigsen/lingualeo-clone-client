@@ -2,13 +2,17 @@ module.exports = {
     "parser": "@typescript-eslint/parser",
     "plugins": [
         "import",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "promise"
     ],
     "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:import/recommended",
-        "prettier"
+        "plugin:promise/recommended",
+        'airbnb-base',
+        'airbnb-typescript/base',
+        "plugin:prettier/recommended"
     ],
     "settings": {
         "import/parsers": {
@@ -22,16 +26,16 @@ module.exports = {
         }
     },
     "rules": {
+        "promise/prefer-await-to-then": 2,
         "@typescript-eslint/array-type": [2, {
             "default": "array",
             "readonly": "array"
         }],
-        "@typescript-eslint/no-unnecessary-condition": 1,
+        "@typescript-eslint/no-unnecessary-condition": 2,
         "@typescript-eslint/prefer-function-type": 1,
         "@typescript-eslint/promise-function-async": 2,
         "no-return-await": 0,
         "@typescript-eslint/return-await": 1,
-        "@typescript-eslint/require-await": 2,
         "@typescript-eslint/consistent-generic-constructors": 1,
         "@typescript-eslint/consistent-type-definitions": 2,
         "@typescript-eslint/member-ordering": [

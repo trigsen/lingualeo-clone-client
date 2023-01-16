@@ -2,7 +2,7 @@
   "name": "@lingualeo-clone-client/prettier",
   "version": "1.0.0",
   "description": "> TODO: description",
-  "author": "Raman Tryputsko <raman.tryputsko@plentific.com>",
+  "author": "Raman Tryputsko",
   "homepage": "https://github.com/trigsen/lingualeo-clone-client#readme",
   "license": "ISC",
   "main": "index.js",
