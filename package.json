@@ -5,8 +5,10 @@
     "packages": [
       "packages/*",
       "config/*"
-    ],
-    "nohoist": ["**"]
+    ]
+  },
+  "scripts": {
+    "refresh": "lerna clean && rm -rf node_modules && yarn install && lerna bootstrap"
   },
   "devDependencies": {
     "lerna": "^6.3.0"

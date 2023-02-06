@@ -4,16 +4,12 @@ const singleSpaDefaults = require("webpack-config-single-spa-react-ts");
 module.exports = (webpackConfigEnv, argv) => {
   const defaultConfig = singleSpaDefaults({
     orgName: "lingualeo-clone-client",
-    projectName: "landing-promo",
+    projectName: "ui-kit",
     webpackConfigEnv,
     argv,
   });
 
-  const config = {
-    externals: [/^@lingualeo-clone-client\/.+/]
-  }
-
   return merge(defaultConfig, {
-    ...config
+    // modify the webpack config however you'd like to by adding to this object
   });
 };

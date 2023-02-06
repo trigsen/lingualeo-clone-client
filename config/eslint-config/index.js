@@ -55,6 +55,7 @@ module.exports = {
             }
         ],
         "@typescript-eslint/method-signature-style": 2,
+        "import/prefer-default-export": 0,
         "import/named": 0,
         "import/no-unused-modules": [1, {"unusedExports": true}],
         "import/no-cycle": [2, { "ignoreExternal": true }],

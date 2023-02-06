@@ -1,5 +1,6 @@
 {
   "name": "@lingualeo-clone-client/root-config",
+  "version": "1.0.0",
   "scripts": {
     "start": "webpack serve --port 9000 --env isLocal",
     "lint": "eslint src --ext js,ts,tsx",
@@ -9,11 +10,6 @@
     "build": "concurrently yarn:build:*",
     "build:webpack": "webpack --mode=production",
     "build:types": "tsc"
-  },
-  "workspaces": {
-    "nohoist": [
-      "**"
-    ]
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",

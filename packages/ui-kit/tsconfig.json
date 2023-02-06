@@ -1,0 +1,12 @@
+{
+  "extends": "ts-config-single-spa",
+  "files": ["src/lingualeo-clone-client-ui-kit.tsx"],
+  "compilerOptions": {
+    "declarationDir": "dist",
+    "strictNullChecks": true,
+    "jsx": "react",
+    "declaration": true
+  },
+  "include": ["src/**/*", "index.d.ts"],
+  "exclude": ["src/**/*.test*"]
+}

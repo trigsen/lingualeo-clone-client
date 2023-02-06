@@ -2,9 +2,12 @@
   "extends": "ts-config-single-spa",
   "compilerOptions": {
     "jsx": "react-jsx",
+    "strictNullChecks": true,
     "declarationDir": "dist"
   },
-  "files": ["src/lingualeo-clone-client-landing-promo.tsx"],
+  "files": [
+    "src/lingualeo-clone-client-landing-promo.tsx"
+  ],
   "include": ["src/**/*"],
   "exclude": ["src/**/*.test*"]
 }
